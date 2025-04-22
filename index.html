@@ -499,16 +499,18 @@
 
         <div class="subscribe">
           <p class="subscribe-title">Subscribe</p>
-          <div class="subscribe-form-input"></div>
-          <form name="subscribe-form" autocomplete="off" novalidate>
-            <input type="email" name="email" placeholder="E-mail" />
-              <svg class="email-icon">
-                <use href="./images/icons.svg@email"></use>
-              </svg>
-              <button class="subscribe-btn" type="submit">Subscribe</button>
+          <form class="footer-form" name="subscribe-form" autocomplete="off" novalidate>
+            <label class="subscribe-label">
+            <input class="email-input" type="email" name="email" placeholder="E-mail" />
+               </label>
+              <button class="subscribe-btn" type="submit">
+                Subscribe
+                <svg class="email-icon" width="24" height="24">
+                  <use href="./images/icons.svg#subscribe"></use>
+                </svg>
+              </button>
            </form>
             </div>
-        </div>
       </div>
     </footer>
   </body>
