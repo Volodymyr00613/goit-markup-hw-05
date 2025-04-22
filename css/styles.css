@@ -627,7 +627,7 @@ display: block;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.feedback-input:focus-within .modal-input-icon {
+.feedback-input:focus-within+ .modal-input-icon {
     fill: #4D5AE5; 
   }
    
@@ -678,9 +678,10 @@ width: 16px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .privacy-input.visually-hidden:checked + .privacy-span {
+  .privacy-input:checked+ .privacy-label .privacy-span {
     border: none;
     fill: #F4F4FD;
+    background: #404bbf;
   }
 
   .privacy-policy-link {
