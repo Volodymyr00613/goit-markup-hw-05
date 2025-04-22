@@ -631,17 +631,22 @@ display: block;
     fill: #4D5AE5; 
   }
    
+  .feedback-comment-container{
+    margin-bottom: 16px;
+  }
+
   .user-comment-textarea {
 border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     width: 100%;
     height: 120px;
+    font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     background-color: transparent;
     outline: transparent;
-    pad: 8px 16px;
+    padding: 8px 16px;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -666,13 +671,14 @@ width: 16px;
     height: 16px;
     border-radius: 2px;
         border: 1px solid rgba(46, 47, 66, 0.4);
-        display: inline-block;
+        display: inline-flex;
         justify-content: center;
         align-items: center;
         fill: transparent;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .privacy-input .visually-hidden:checked {
+  .privacy-input.visually-hidden:checked + .privacy-span {
     border: none;
     fill: #F4F4FD;
   }
@@ -691,5 +697,8 @@ width: 16px;
         background-color:#4D5AE5;
         border: none;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        display: block;
+        height: 56px;
+        min-width: 169px;
   }
  
